@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
     selector: '<home-root>',
-    template:`
-        <h1>This is Home page!</h1>   
-    `
+    templateUrl: 'home.component.html'
 })
 export class HomeComponent implements OnInit {
     constructor() { }

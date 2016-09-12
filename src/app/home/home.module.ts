@@ -8,7 +8,7 @@ import { HomeComponent }   from './home.component';
         BrowserModule,
         HomeRoutingModule
     ],
-    exports: [HomeComponent],
+    exports: [],
     declarations: [HomeComponent],
     providers: [],
 })

@@ -3,28 +3,29 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
-//Custom Modules
+//Feature Modules
 import { AppRoutingModule } from './app.routing'; 
-import { ShareModule } from '../share/share.module';
-import { HomeModule } from '../home/home.module';
+import { ShareModule } from './share/share.module';
+import { HomeModule } from './home/home.module';
+import { AboutModule } from './about/about.module';
 
 //App Module Members
 import { AppComponent } from './app.component';
 import { MainContainerComponent } from './main-container/main-container.component';
-import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
 
-const components: any[] = [AppComponent, MainContainerComponent, AboutComponent];
+const components: any[] = [AppComponent, MainContainerComponent, HeaderComponent];
 const directives:any[] = [];
 const pipes:any[] = [];
 
 const angularModules: any[] = [BrowserModule, HttpModule];
-const customModules: any[] = [ShareModule, HomeModule];
+const featureModules: any[] = [ShareModule, HomeModule, AboutModule];
 const thirdPartyModules: any[] = [];
 
 @NgModule({
     imports: [
         ...angularModules,
-        ...customModules,
+        ...featureModules,
         ...thirdPartyModules,
         AppRoutingModule
     ],
