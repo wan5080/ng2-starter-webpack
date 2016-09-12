@@ -5,9 +5,9 @@ import { HttpModule } from '@angular/http';
 
 //Feature Modules
 import { AppRoutingModule } from './app.routing'; 
-import { ShareModule } from './share/share.module';
-import { HomeModule } from './home/home.module';
-import { AboutModule } from './about/about.module';
+import { ShareModule } from './_share/share.module';
+import { HomeModule } from './_home/home.module';
+import { AboutModule } from './_about/about.module';
 
 //App Module Members
 import { AppComponent } from './app.component';
